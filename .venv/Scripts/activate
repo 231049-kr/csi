@@ -35,7 +35,23 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="C:\Users\231019\Documents\GitHub\csi\.venv"
+=======
+<<<<<<< HEAD
+VIRTUAL_ENV="C:\Users\231021\Documents\GitHub\csi\.venv"
+=======
+<<<<<<< HEAD
+VIRTUAL_ENV="C:\Users\231054\Documents\GitHub\csi\.venv"
+=======
+<<<<<<< HEAD
+VIRTUAL_ENV="C:\Users\231004\Documents\GitHub\csi\.venv"
+=======
+VIRTUAL_ENV="C:\Users\231049\Documents\GitHub\csi\.venv"
+>>>>>>> 51ed46f53b2828a757239f633193cd07b772947b
+>>>>>>> ad923c2c383aff14d73472c61da77b2b9f6f1a5d
+>>>>>>> 265dfff06b006ad926e923e4e27d525145e57c77
+>>>>>>> e766e3a294dd90412a4f589084e7b8d77ef408af
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
