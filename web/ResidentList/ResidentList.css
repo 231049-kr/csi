@@ -61,7 +61,7 @@ input[type="search"]:focus {
   border-bottom: 1px solid #e5e9f0;
 }
 
-/* 幅の個別調整（必要に応じて調整してください） */
+/* 幅の個別調整 */
 .status-table th:nth-child(1) { width: 15%; }
 .status-table th:nth-child(2) { width: 35%; }
 .status-table th:nth-child(3) { width: 25%; }
