@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./History.css">
+    <title>履歴画面</title>
+</head>
+<header>
+    <a class="logo" href="#">ホームに戻るよ</a>
+    <span class="logo-subtext">WiFi-CSI 見守りシステム</span>
+</header>
+<body>
+    <h1>対応履歴</h1>
+    <select name="period">
+        <option value="all">すべて</option>
+        <option value="week">今週</option>
+        <option value="month">今月</option>
+    </select>
+    <select name="type">
+        <option value="all">すべて</option>
+        <option value="detection">転倒検知</option>
+        <option value="SensorError">センサー異常</option>
+    </select>
+    <button>検索</button>
+    <table class="history-table">
+        <thead>
+            <tr>
+                <th>日時</th>
+                <th>部屋番号</th>
+                <th>氏名</th>
+                <th>種別</th>
+                <th>対応者</th>
+            </tr>
+            <!--<tr class="is-empty">
+                <td class="username empty-text">住居者はいません</td>
+            </tr>-->
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
