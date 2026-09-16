@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通知一覧</title>
+    <link rel="stylesheet" href="NotificationList.css">
+</head>
+
+<header>
+    <h1>WiFi-CSI見守りシステム</h1>
+    <div class="user-name">{{user_name}}さん</div>
+</header>
+
+<body>
+
+    <div class="notification-tabs">
+        <button class="tab" data-filter="all">
+            すべて
+        </button>
+
+        <button class="tab" data-filter="unhandled">
+            未対応 (<span id="unhandled-count">0</span>)
+        </button>
+
+        <button class="tab" data-filter="handled">
+            対応済み
+        </button>
+    </div>
+
+    <div id="notification-list">
+
+        <!-- 通知1 -->
+        <div class="notification" data-status="unhandled">
+            <div class="notification-icon red">!</div>
+
+            <div class="notification-content">
+                <div class="notification-title">
+                    転倒検知アラート
+                </div>
+                <div class="notification-info">
+                    102号室 鈴木 花子
+                </div>
+            </div>
+
+            <div class="notification-time">
+                10:42
+            </div>
+
+            <div class="notification-arrow">
+                >
+            </div>
+        </div>
+
+        <!-- 通知2 -->
+        <div class="notification" data-status="unhandled">
+            <div class="notification-icon yellow">!</div>
+
+            <div class="notification-content">
+                <div class="notification-title">
+                    センサー接続異常
+                </div>
+                <div class="notification-info">
+                    105号室 伊藤 健
+                </div>
+            </div>
+
+            <div class="notification-time">
+                09:18
+            </div>
+
+            <div class="notification-arrow">
+                >
+            </div>
+        </div>
+
+        <!-- 通知3 -->
+        <div class="notification" data-status="handled">
+            <div class="notification-icon green">✓</div>
+
+            <div class="notification-content">
+                <div class="notification-title">
+                    転倒検知アラート
+                </div>
+                <div class="notification-info">
+                    103号室 佐藤 次郎
+                </div>
+            </div>
+
+            <div class="notification-time">
+                昨日 16:20
+            </div>
+
+            <div class="notification-arrow">
+                >
+            </div>
+        </div>
+
+    </div>
+    <script src="NotificationList.js"></script>
+</body>
