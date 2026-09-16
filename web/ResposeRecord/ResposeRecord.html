@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>対応記録</title>
+
+    <link rel="stylesheet" href="ResposeRecord.css">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+        <h1>WiFi-CSI見守りシステム</h1>
+
+        <!-- ログインユーザーの職員名をFlaskから取得して表示 -->
+        <div class="user-name">
+            {{ user_name }}さん
+        </div>
+    </header>
+
+
+    <!-- メインコンテンツ -->
+    <main>
+
+        <h2>対応記録</h2>
+
+
+        <!-- 対象者情報 -->
+        <section class="info-section">
+
+            <h3>対象者情報</h3>
+
+            <div class="info-box">
+
+                <div class="info-row">
+                    <span class="label">氏名</span>
+                    <span>鈴木 花子</span>
+                </div>
+
+                <div class="info-row">
+                    <span class="label">部屋</span>
+                    <span>102号室</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 通知情報 -->
+        <section class="info-section">
+
+            <h3>通知情報</h3>
+
+            <div class="info-box">
+
+                <div class="info-row">
+                    <span class="label">検知内容</span>
+                    <span class="alert-text">転倒検知</span>
+                </div>
+
+                <div class="info-row">
+                    <span class="label">発生日時</span>
+                    <span>2026/09/16 10:42</span>
+                </div>
+
+                <div class="info-row">
+                    <span class="label">信頼度</span>
+                    <span>94%</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 対応内容 -->
+        <section class="info-section">
+
+            <h3>対応内容</h3>
+
+            <textarea
+                id="response-content"
+                placeholder="対応した内容を入力してください。"></textarea>
+
+        </section>
+
+
+        <!-- ボタン -->
+        <div class="button-area">
+
+            <button
+                type="button"
+                class="cancel-button"
+                onclick="history.back()">
+                キャンセル
+            </button>
+
+            <button
+                type="button"
+                class="record-button"
+                id="record-button">
+                対応を記録
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="response_record.js"></script>
+
+</body>
+
+</html>

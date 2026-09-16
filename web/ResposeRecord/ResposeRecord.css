@@ -1,0 +1,131 @@
+/* 全体 */
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    font-family: sans-serif;
+}
+
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0b2d4d;
+    color: white;
+
+    height: 60px;
+    padding: 0 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.user-name {
+    font-size: 16px;
+}
+
+
+/* メイン */
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+
+/* 各情報 */
+.info-section {
+    margin-bottom: 25px;
+}
+
+.info-section h3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+
+/* 情報ボックス */
+.info-box {
+    background-color: white;
+    border: 1px solid #d9e0e7;
+    border-radius: 6px;
+    padding: 15px 20px;
+}
+
+
+/* 情報1行 */
+.info-row {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    width: 120px;
+    font-weight: bold;
+}
+
+
+/* アラート */
+.alert-text {
+    font-weight: bold;
+}
+
+
+/* 対応内容 */
+textarea {
+    width: 100%;
+    min-height: 150px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccd6e0;
+    border-radius: 6px;
+
+    resize: vertical;
+
+    font-size: 15px;
+}
+
+
+/* ボタン */
+.button-area {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.button-area button {
+    padding: 11px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: white;
+    border: 1px solid #ccd6e0;
+}
+
+.record-button {
+    background-color: #0b2d4d;
+    color: white;
+    border: 1px solid #0b2d4d;
+}
