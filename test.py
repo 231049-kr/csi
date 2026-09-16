@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+import numpy
+import pandas
+import matplotlib
+import scipy
+import sklearn
+
+print("NumPy:", numpy.__version__)
+print("Pandas:", pandas.__version__)
+print("Matplotlib:", matplotlib.__version__)
+print("SciPy:", scipy.__version__)
+print("Scikit-learn:", sklearn.__version__)
+
+print("すべて正常に読み込めました！")
+=======
+<<<<<<< HEAD
+print("hello world")
+=======
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -42,3 +60,5 @@ plt.legend()
 plt.grid()
 
 plt.show()
+>>>>>>> 51ed46f53b2828a757239f633193cd07b772947b
+>>>>>>> ad923c2c383aff14d73472c61da77b2b9f6f1a5d
