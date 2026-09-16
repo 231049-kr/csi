@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>監視画面 - Wi-Fi-CSI 高齢者見守りシステム</title>
+
+    <link rel="stylesheet" href="monitoring.css">
+</head>
+
+
+<body>
+
+    <!-- =========================
+         ヘッダー
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-title">
+            🏠 Wi-Fi-CSI 高齢者見守りシステム
+        </div>
+
+        <div class="header-right">
+
+            <div class="system-running">
+                システム稼働中
+            </div>
+
+            <div>
+                最終更新　2026/09/16 15:38:15
+            </div>
+
+            <div>
+                👤 管理者
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         メイン画面
+    ========================== -->
+
+    <main class="main">
+
+
+        <!-- タイトル -->
+
+        <div class="page-title">
+            リアルタイム監視
+        </div>
+
+        <div class="page-description">
+            各部屋の状態をリアルタイムで監視しています。
+            異常が発生した場合は、該当する部屋を確認してください。
+        </div>
+
+
+        <!-- =========================
+             監視エリア
+        ========================== -->
+
+        <div class="dashboard-area">
+
+
+            <!-- =========================
+                 部屋一覧
+            ========================== -->
+
+            <section class="room-grid">
+
+
+                <!-- 101号室 -->
+
+                <div class="room-card">
+
+                    <div class="room-header">
+
+                        <span class="room-icon">🛏</span>
+
+                        <span class="room-name">
+                            101号室
+                        </span>
+
+                        <span class="status normal">
+                            正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+
+                        <span class="monitor-icon">👤</span>
+
+                        <span class="monitor-name">
+                            在室
+                        </span>
+
+                        <span class="monitor-result result-normal">
+                            ○ 在室
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+
+                        <span class="monitor-icon">💨</span>
+
+                        <span class="monitor-name">
+                            呼吸
+                        </span>
+
+                        <span class="monitor-result result-normal">
+                            ○ 正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+
+                        <span class="monitor-icon">🚶</span>
+
+                        <span class="monitor-name">
+                            離床
+                        </span>
+
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+
+                        <span class="monitor-icon">⚠</span>
+
+                        <span class="monitor-name">
+                            転倒
+                        </span>
+
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+
+                    </div>
+
+
+                    <div class="update-time">
+                        ◷ 最終更新　15:38:12
+                    </div>
+
+                </div>
+
+
+
+                <!-- 102号室 -->
+
+                <div class="room-card danger">
+
+                    <div class="room-header">
+
+                        <span class="room-icon">🛏</span>
+
+                        <span class="room-name">
+                            102号室
+                        </span>
+
+                        <span class="status danger">
+                            ⚠ 異常
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+
+                        <span class="monitor-icon">👤</span>
+
+                        <span class="monitor-name">
+                            在室
+                        </span>
+
+                        <span class="monitor-result result-normal">
+                            ○ 在室
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+
+                        <span class="monitor-icon">💨</span>
+
+                        <span class="monitor-name">
+                            呼吸
+                        </span>
+
+                        <span class="monitor-result result-normal">
+                            ○ 正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+
+                        <span class="monitor-icon">🚶</span>
+
+                        <span class="monitor-name">
+                            離床
+                        </span>
+
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+
+                        <span class="monitor-icon">⚠</span>
+
+                        <span class="monitor-name">
+                            転倒
+                        </span>
+
+                        <span class="monitor-result result-danger">
+                            ⚠ 検知
+                        </span>
+
+                    </div>
+
+
+                    <div class="alert-box">
+
+                        <div class="alert-title">
+                            ⚠ 転倒検知
+                        </div>
+
+                        <div class="alert-detail">
+                            AI判定：95%　
+                            発生時刻：15:37:03
+                        </div>
+
+                    </div>
+
+
+                    <div class="update-time">
+                        ◷ 最終更新　15:37:03
+                    </div>
+
+                </div>
+
+
+
+                <!-- 103号室 -->
+
+                <div class="room-card">
+
+                    <div class="room-header">
+
+                        <span class="room-icon">🛏</span>
+
+                        <span class="room-name">
+                            103号室
+                        </span>
+
+                        <span class="status normal">
+                            正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">👤</span>
+                        <span class="monitor-name">在室</span>
+                        <span class="monitor-result result-normal">
+                            ○ 在室
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">💨</span>
+                        <span class="monitor-name">呼吸</span>
+                        <span class="monitor-result result-normal">
+                            ○ 正常
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">🚶</span>
+                        <span class="monitor-name">離床</span>
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">⚠</span>
+                        <span class="monitor-name">転倒</span>
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+                    </div>
+
+
+                    <div class="update-time">
+                        ◷ 最終更新　15:37:58
+                    </div>
+
+                </div>
+
+
+
+                <!-- 104号室 -->
+
+                <div class="room-card">
+
+                    <div class="room-header">
+
+                        <span class="room-icon">🛏</span>
+
+                        <span class="room-name">
+                            104号室
+                        </span>
+
+                        <span class="status normal">
+                            正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">👤</span>
+                        <span class="monitor-name">在室</span>
+                        <span class="monitor-result result-normal">
+                            ○ 在室
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">💨</span>
+                        <span class="monitor-name">呼吸</span>
+                        <span class="monitor-result result-normal">
+                            ○ 正常
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">🚶</span>
+                        <span class="monitor-name">離床</span>
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">⚠</span>
+                        <span class="monitor-name">転倒</span>
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+                    </div>
+
+
+                    <div class="update-time">
+                        ◷ 最終更新　15:37:50
+                    </div>
+
+                </div>
+
+
+
+                <!-- 105号室 -->
+
+                <div class="room-card warning">
+
+                    <div class="room-header">
+
+                        <span class="room-icon">🛏</span>
+
+                        <span class="room-name">
+                            105号室
+                        </span>
+
+                        <span class="status warning">
+                            ⚠ 注意
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">👤</span>
+                        <span class="monitor-name">在室</span>
+                        <span class="monitor-result result-normal">
+                            ○ 在室
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">💨</span>
+                        <span class="monitor-name">呼吸</span>
+                        <span class="monitor-result result-normal">
+                            ○ 正常
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">🚶</span>
+                        <span class="monitor-name">離床</span>
+                        <span class="monitor-result result-warning">
+                            ⚠ 長時間離床
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">⚠</span>
+                        <span class="monitor-name">転倒</span>
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+                    </div>
+
+
+                    <div class="warning-box">
+
+                        <div class="warning-title">
+                            ◷ 長時間離床中
+                        </div>
+
+                        <div class="warning-detail">
+                            30分以上の離床を検知
+                        </div>
+
+                    </div>
+
+
+                    <div class="update-time">
+                        ◷ 最終更新　15:35:22
+                    </div>
+
+                </div>
+
+
+
+                <!-- 106号室 -->
+
+                <div class="room-card">
+
+                    <div class="room-header">
+
+                        <span class="room-icon">🛏</span>
+
+                        <span class="room-name">
+                            106号室
+                        </span>
+
+                        <span class="status normal">
+                            正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">👤</span>
+                        <span class="monitor-name">在室</span>
+                        <span class="monitor-result result-normal">
+                            ○ 在室
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">💨</span>
+                        <span class="monitor-name">呼吸</span>
+                        <span class="monitor-result result-normal">
+                            ○ 正常
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">🚶</span>
+                        <span class="monitor-name">離床</span>
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+                    </div>
+
+
+                    <div class="monitor-item">
+                        <span class="monitor-icon">⚠</span>
+                        <span class="monitor-name">転倒</span>
+                        <span class="monitor-result result-normal">
+                            ○ なし
+                        </span>
+                    </div>
+
+
+                    <div class="update-time">
+                        ◷ 最終更新　15:37:37
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 右側
+            ========================== -->
+
+            <aside class="side-panel">
+
+
+                <!-- システム状態 -->
+
+                <div class="panel">
+
+                    <div class="panel-title">
+                        ▣ システム状態
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span class="system-dot"></span>
+
+                        ESP32-C6（Wi-Fi）
+
+                        <span class="system-status">
+                            正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span class="system-dot"></span>
+
+                        Wi-Fi通信
+
+                        <span class="system-status">
+                            正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span class="system-dot"></span>
+
+                        解析サーバー
+
+                        <span class="system-status">
+                            正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span class="system-dot"></span>
+
+                        データベース
+
+                        <span class="system-status">
+                            正常
+                        </span>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span class="system-dot"></span>
+
+                        Webアプリ
+
+                        <span class="system-status">
+                            正常
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 監視対象 -->
+
+                <div class="panel">
+
+                    <div class="panel-title">
+                        ▥ 監視対象
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            総部屋数
+                        </span>
+
+                        <span class="summary-number">
+                            6 部屋
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            異常発生中
+                        </span>
+
+                        <span class="summary-number summary-danger">
+                            1 部屋
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            注意中
+                        </span>
+
+                        <span class="summary-number summary-warning">
+                            1 部屋
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+
+
+        <!-- =========================
+             最新の検知
+        ========================== -->
+
+        <section class="latest-panel">
+
+            <div class="latest-title">
+                🔔 最新の検知
+            </div>
+
+
+            <table class="latest-table">
+
+                <thead>
+
+                    <tr>
+                        <th>時刻</th>
+                        <th>部屋番号</th>
+                        <th>検知内容</th>
+                        <th>詳細</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr class="latest-danger">
+
+                        <td class="text-danger">
+                            15:37:03
+                        </td>
+
+                        <td class="text-danger">
+                            102号室
+                        </td>
+
+                        <td class="text-danger">
+                            ⚠ 転倒検知
+                        </td>
+
+                        <td>
+                            AI判定：95%
+                        </td>
+
+                    </tr>
+
+
+                    <tr class="latest-warning">
+
+                        <td class="text-warning">
+                            15:35:22
+                        </td>
+
+                        <td class="text-warning">
+                            105号室
+                        </td>
+
+                        <td class="text-warning">
+                            ⚠ 長時間離床
+                        </td>
+
+                        <td>
+                            30分以上の離床を検知
+                        </td>
+
+                    </tr>
+
+
+                    <tr class="latest-normal">
+
+                        <td class="text-normal">
+                            15:32:26
+                        </td>
+
+                        <td class="text-normal">
+                            103号室
+                        </td>
+
+                        <td class="text-normal">
+                            ✓ 在室（正常）
+                        </td>
+
+                        <td>
+                            特に異常はありません
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

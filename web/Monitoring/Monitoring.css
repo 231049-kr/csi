@@ -1,0 +1,622 @@
+/* =========================
+   全体
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        "Yu Gothic",
+        "Meiryo",
+        Arial,
+        sans-serif;
+
+    background-color: #f4f8fc;
+
+    color: #17365d;
+}
+
+
+/* =========================
+   ヘッダー
+========================= */
+
+.header {
+    height: 70px;
+
+    background: linear-gradient(
+        90deg,
+        #0c477b,
+        #145b91
+    );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+.header-title {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+.header-right {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    font-size: 14px;
+}
+
+
+.system-running {
+    color: #55e28a;
+
+    font-weight: bold;
+}
+
+
+.system-running::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: #38d879;
+
+    border-radius: 50%;
+
+    margin-right: 8px;
+}
+
+
+/* =========================
+   メイン
+========================= */
+
+.main {
+    width: 100%;
+
+    padding: 30px 40px;
+
+    overflow: auto;
+}
+
+
+.page-title {
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.page-description {
+    color: #5b7692;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   監視エリア
+========================= */
+
+.dashboard-area {
+    display: grid;
+
+    grid-template-columns:
+        minmax(700px, 1fr)
+        300px;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   部屋一覧
+========================= */
+
+.room-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================
+   部屋カード
+========================= */
+
+.room-card {
+    background-color: white;
+
+    border-radius: 8px;
+
+    border:
+        2px solid #1fb77a;
+
+    box-shadow:
+        0 2px 8px rgba(30, 80, 120, 0.08);
+
+    padding: 18px;
+
+    min-height: 250px;
+}
+
+
+.room-card.warning {
+    border-color: #e4a900;
+}
+
+
+.room-card.danger {
+    border-color: #ef334d;
+}
+
+
+/* =========================
+   部屋タイトル
+========================= */
+
+.room-header {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 14px;
+}
+
+
+.room-icon {
+    font-size: 27px;
+
+    margin-right: 10px;
+}
+
+
+.room-name {
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+
+.status {
+    margin-left: auto;
+
+    padding:
+        7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+.status.normal {
+    background-color: #1caf72;
+}
+
+
+.status.warning {
+    background-color: #dfa900;
+}
+
+
+.status.danger {
+    background-color: #ef334d;
+}
+
+
+/* =========================
+   検知項目
+========================= */
+
+.monitor-item {
+    display: flex;
+
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid #e5edf4;
+
+    font-size: 14px;
+}
+
+
+.monitor-icon {
+    width: 30px;
+
+    font-size: 17px;
+}
+
+
+.monitor-name {
+    width: 65px;
+
+    font-weight: bold;
+}
+
+
+.monitor-result {
+    margin-left: auto;
+
+    font-weight: bold;
+}
+
+
+.result-normal {
+    color: #1caf72;
+}
+
+
+.result-warning {
+    color: #dfa900;
+}
+
+
+.result-danger {
+    color: #ef334d;
+}
+
+
+/* =========================
+   異常表示
+========================= */
+
+.alert-box {
+    margin-top: 12px;
+
+    padding: 10px;
+
+    background-color: #fff0f2;
+
+    border:
+        1px solid #ffc1c9;
+
+    border-radius: 6px;
+
+    color: #e52c45;
+}
+
+
+.alert-title {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.alert-detail {
+    font-size: 12px;
+}
+
+
+/* =========================
+   注意表示
+========================= */
+
+.warning-box {
+    margin-top: 12px;
+
+    padding: 10px;
+
+    background-color: #fff8dc;
+
+    border:
+        1px solid #f0d36a;
+
+    border-radius: 6px;
+
+    color: #c18b00;
+}
+
+
+.warning-title {
+    font-weight: bold;
+}
+
+
+.warning-detail {
+    font-size: 12px;
+}
+
+
+/* =========================
+   最終更新
+========================= */
+
+.update-time {
+    margin-top: 14px;
+
+    color: #70869b;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   右側パネル
+========================= */
+
+.side-panel {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.panel {
+    background-color: white;
+
+    border:
+        1px solid #c9dff1;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 8px rgba(30, 80, 120, 0.07);
+}
+
+
+.panel-title {
+    padding:
+        16px 18px;
+
+    background-color: #f4f9fd;
+
+    border-bottom:
+        1px solid #dce9f3;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.system-item {
+    display: flex;
+
+    align-items: center;
+
+    padding:
+        13px 18px;
+
+    border-bottom:
+        1px solid #edf2f6;
+
+    font-size: 13px;
+}
+
+
+.system-dot {
+    width: 12px;
+    height: 12px;
+
+    background-color: #1caf72;
+
+    border-radius: 50%;
+
+    margin-right: 10px;
+}
+
+
+.system-status {
+    margin-left: auto;
+
+    color: #1caf72;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   監視対象
+========================= */
+
+.summary-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding:
+        14px 18px;
+
+    border-bottom:
+        1px solid #edf2f6;
+
+    font-size: 14px;
+}
+
+
+.summary-number {
+    font-weight: bold;
+}
+
+
+.summary-danger {
+    color: #ef334d;
+}
+
+
+.summary-warning {
+    color: #dfa900;
+}
+
+
+/* =========================
+   最新の検知
+========================= */
+
+.latest-panel {
+    margin-top: 25px;
+
+    background-color: white;
+
+    border:
+        1px solid #c9dff1;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 8px rgba(30, 80, 120, 0.07);
+}
+
+
+.latest-title {
+    padding:
+        16px 20px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    border-bottom:
+        1px solid #dce9f3;
+}
+
+
+.latest-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+.latest-table th,
+.latest-table td {
+    padding:
+        12px 15px;
+
+    text-align: left;
+
+    border-bottom:
+        1px solid #edf2f6;
+
+    font-size: 13px;
+}
+
+
+.latest-table th {
+    background-color: #f6f9fc;
+
+    color: #58728c;
+}
+
+
+/* =========================
+   最新検知の状態
+========================= */
+
+.latest-danger {
+    background-color: #fff0f2;
+}
+
+
+.latest-warning {
+    background-color: #fff9e3;
+}
+
+
+.latest-normal {
+    background-color: #f1fbf6;
+}
+
+
+.text-danger {
+    color: #ef334d;
+
+    font-weight: bold;
+}
+
+
+.text-warning {
+    color: #d59d00;
+
+    font-weight: bold;
+}
+
+
+.text-normal {
+    color: #149c67;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   画面サイズ対応
+========================= */
+
+@media (max-width: 1100px) {
+
+    .dashboard-area {
+        grid-template-columns: 1fr;
+    }
+
+
+    .room-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .header-title {
+        font-size: 18px;
+    }
+
+
+    .header-right {
+        display: none;
+    }
+
+
+    .main {
+        padding: 20px;
+    }
+
+
+    .room-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
